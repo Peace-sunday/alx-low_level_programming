@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * print_alphabet - function to print abc
  * Return: Always 0 (Success)
