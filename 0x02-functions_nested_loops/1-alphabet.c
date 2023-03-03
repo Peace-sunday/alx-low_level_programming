@@ -9,7 +9,7 @@
 void print_alphabet(void)
 {
 	char c;
-	/*Inside the loop body print the value of ch */
+	/*Inside the loop body print the value of c */
 	for (c = 'a'; c <= 'z'; c++)
 	{
 		_putchar(c);
