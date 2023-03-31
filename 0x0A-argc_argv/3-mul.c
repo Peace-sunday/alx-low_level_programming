@@ -1,30 +1,27 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 /**
- * Main -  A function that multiplies two number
- * @argc: parameter
- * @argv: string
- * Return: 0 (success)
+ * main - this is a function to print its name
+ * @argc: argc parameter
+ * @argv: an array of a command listed
+ * Return: 0 for success
  */
-
 int main(int argc, char *argv[])
 {
-	int num1 = 0, num2 = 0;
+	int result, num1, num2;
 
-	if (argc == 3)
+	if (argc != 3)
 	{
-		num1 = atoi(argv[1]);
-		num2 = atoi(argv[2]);
-		printf("%d\n", num1 * num2);
+		printf("%s\n", "Error");
+		return (1);
 	}
-	else
-	{
-	printf("Error\n");
-	return (1);
-	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	result = num1 * num2;
 
+	printf("%d\n", result);
 	return (0);
 }
 
